@@ -17,8 +17,8 @@ function performSearchEs() {
   // Construir la cadena de consulta con los términos de búsqueda
 
   var searchURLs = [
-    "http://elperuano.pe/portal/buscador?q=" + encodeURIComponent(searchInput),
     "https://elcomercio.pe/buscar/" + encodeURIComponent(searchInput) + "/todas/descendiente/?query=" + encodeURIComponent(searchInput),
+    "http://elperuano.pe/portal/buscador?q=" + encodeURIComponent(searchInput),
     "https://larepublica.pe/buscador?buscando=" + encodeURIComponent(searchInput),
     "https://andina.pe/agencia/busqueda.aspx?search=" + encodeURIComponent(searchInput),
     "https://cnnespanol.cnn.com/?s=" + encodeURIComponent(searchInput),
