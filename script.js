@@ -18,6 +18,7 @@ function performSearchEs() {
 
   var searchURLs = [
     "https://elcomercio.pe/buscar/" + encodeURIComponent(searchInput) + "/todas/descendiente/?query=" + encodeURIComponent(searchInput),
+    "https://www.hildebrandtensustrece.com/busqueda/" + encodeURIComponent(searchInput),
     "http://elperuano.pe/portal/buscador?q=" + encodeURIComponent(searchInput),
     "https://larepublica.pe/buscador?buscando=" + encodeURIComponent(searchInput),
     "https://andina.pe/agencia/busqueda.aspx?search=" + encodeURIComponent(searchInput),
@@ -31,7 +32,7 @@ function performSearchEs() {
     var iframe = document.createElement("iframe");
     iframe.src = searchURLs[i];
     iframe.style.width = "calc(50% - 10px)";
-    iframe.style.height = "400px";
+    iframe.style.height = "800px";
     iframe.style.margin = "50px";
     iframe.style.display = "block";
     iframe.style.marginLeft = "auto";
@@ -65,7 +66,7 @@ function performSearchEn() {
     var iframe = document.createElement("iframe");
     iframe.src = searchURLs[i];
     iframe.style.width = "calc(50% - 10px)";
-    iframe.style.height = "400px";
+    iframe.style.height = "800px";
     iframe.style.margin = "50px";
     iframe.style.display = "block";
     iframe.style.marginLeft = "auto";
