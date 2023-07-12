@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Finder</title>
+  <style>
+    #search-box {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    #search-input {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    #search-results {
+      margin-top: 20px;
+    }
+
+    #titulo {
+      text-align: center;
+      font-size: 80px;
+      background-color: darkcyan;
+      font-family: Tahoma;
+    }
+
+    #Instruccion {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: -10px;
+    }
+
+    #parrafo {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+      margin-left: 500px;
+      margin-right: 500px;
+      background-color: rgb(178, 224, 210);
+      
+    }
+    #refresh-button {
+      position: fixed;
+      left: 10px;
+      top: 10px;
+      font-size: 16px;
+      padding: 10px;
+    }
+    body {
+      background-color: #ccdddc; /* Reemplaza con el color de fondo que desees */
+    }
+
+  </style>
+
+
+<header class="content header" id>
+  <h1 class="title" id="titulo">News Finder</h1>
+  <p id="parrafo">Herramienta para contrastar información
+     en diferentes páginas de noticias con 
+     el objetivo de combatir la desinformación</p>
+  <p id="parrafo">Tip: Revisa quién es el autor de las noticias que leas</p>
+</header>
+
+<button id="refresh-button">Atrás</button>
+  
+<script>
+  var refreshButton = document.getElementById("refresh-button");
+  refreshButton.addEventListener("click", function() {
+    location.reload();
+  });
+</script>
+
+<section class="content">
+    <p id="Instruccion">Ingrese palabras claves para su búsqueda</p>
+
+  <div id="search-box">
+    <input id="search-input" type="text" placeholder="Ingrese su búsqueda">
+    <button id="search-button-es">Buscar en español</button>
+    <button id="search-button-en">Buscar en inglés</button>
+  </div>
+  <div id="search-results"></div>
+</section>
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
