@@ -18,7 +18,7 @@ function performSearchEs() {
 
   var searchURLs = [
     "https://elcomercio.pe/buscar/" + encodeURIComponent(searchInput) + "/todas/descendiente/?query=" + encodeURIComponent(searchInput),
-    "https://gestion.pe/buscar/"+ encodeURIComponent(searchInput) +"/todas/descendiente/?query=" + encodeURIComponent(searchInput),
+    "https://gestion.pe/buscar/" + encodeURIComponent(searchInput) + "/todas/descendiente/?query=" + encodeURIComponent(searchInput),
     "https://larepublica.pe/buscador?buscando=" + encodeURIComponent(searchInput),
     "https://andina.pe/agencia/busqueda.aspx?search=" + encodeURIComponent(searchInput),
     "https://cnnespanol.cnn.com/?s=" + encodeURIComponent(searchInput),
